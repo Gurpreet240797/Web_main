@@ -1,0 +1,137 @@
+
+ <!DOCTYPE HTML>
+<html>
+	<head lang="en-US">
+		<title>Workshop</title>
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/97/DBIT_logo.png" type="image/png"></link>
+		
+		<script src="sp.js"></script>
+
+		<style>
+			ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:#e67e22;
+				background:#e67e22;
+			}
+			li{
+				float: left;
+			}
+			li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+			}
+			li a:hover{
+				background-color:#1abc9c;
+				text-decoration:none;
+			}
+			li a.active{
+				background-color:grey;
+			}
+			blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    	padding: 5px;
+			    background-color:#FFF8DC;
+		    	border-left: 2px solid black;
+			}
+			th{
+				text-align:right;
+			}
+
+			td{
+				text-align:left;
+			}
+			fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+			}
+			input,select,button{
+				padding: 5px 8px;
+				margin: 4px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				box-sizing: border-box;
+			}
+			button:hover{
+				 background-color:#1abc9c;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header style="background-color:#e67e22;">
+			<table align="center">
+			<tr>
+			<td><img src="http://www.dbclmumbai.org/images/DBIT_logoPNG.png" weight="80" height="80" align="left"></td>
+			<td><h2 align="center">DON BOSCO INSTITUTE OF TECHNOLOGY<br><center>CSI<center></h2></td>
+			<td><img src="https://placementtalks.files.wordpress.com/2015/02/csi-logo.png" weight="80" height="80" align="right"></td>
+			</tr>
+			</table>
+		</header>
+		<hr><br>
+		<ul id="gp">
+					<li><a href="https://moodle.dbit.in/login/index.php">Home</a></li>
+					<li><a href="gp.html">Registration Form</a></li>
+					<li><a href="speaker.html">Speaker</a></li>
+					<li><a href="http://www.dbit.in/index.php/organizations/csi">About Us</a></li>
+					<li><a href="#">Search</a></li>
+					<li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+				</ul>
+		<center>
+		<fieldset>
+			<form name="speaker" method="POST" action="csi3.php" onsubmit="return myFunction()">
+			
+					<blockquote>
+						<h2 align="center"><span style="color:#9999;"><strong><span">Worshop Details</span></strong></span></h2>
+					</blockquote>
+						<table align="center">
+						<tr>
+						<th>Date</th>
+						<td>:</td>
+						<td><input type="date" name="date" id="date"></td>
+						</tr>
+						<tr>				
+						<th>Time</th>
+						<td>:</td>
+						<td><input type="time" name="time" id="time"></td>
+						</tr>
+						<tr>
+						<th>Speaker</th>
+						<td>:</td>
+						<td><input type="text" name="speaker" id="speaker"></td>
+						<tr>
+						<th>Number Of Hours</th>
+						<td>:</td>
+						<td><input type="number" name="hrs" id="hrs"></td>
+						</tr>
+						<tr>
+						<th>CSI member workshop fee</th>
+						<td>:</td>
+						<td>&#8377;<input type="number" name="amount" id="amount"></td>
+						</tr>
+						<tr>
+						<th>Non CSI member workshop fee</th>
+						<td>:</td>
+						<td>&#8377;<input type="number" name="amount1" id="amount1"></td>
+						</tr>
+	
+						</table>
+						<center>
+							<input type="submit" value="Submit" name="submit" id="submit" />
+						</center>
+					</form>
+					
+		</fieldset>
+		</center>
+	</body>
+
+</html>
